@@ -6,6 +6,15 @@ const  Home=(props) =>{
       <h1>Hello next js</h1>
       <h2>{props.message}</h2>
       <Link href="/text"><a>go to text</a></Link>
+      <style jsx>
+        {
+          `
+          h1{
+            color:blue;
+          }
+          `
+        }
+      </style>
     </div>
   )
 }
