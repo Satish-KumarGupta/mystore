@@ -1,6 +1,6 @@
 
 import Link from 'next/link'
-const  Text=() =>{
+const  Home =() =>{
     return (
       <div>
         <h1>welcome to product  js</h1>
@@ -8,5 +8,5 @@ const  Text=() =>{
       </div>
     )
   }
+  export default Home;
   
-  export default Text;
