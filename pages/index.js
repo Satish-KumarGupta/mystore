@@ -5,6 +5,7 @@ import Link from 'next/link'
 const  Home=({products}) =>{
 
   const productList = products.map(product=>{
+    console.log(product);
     return(
      <div className="card" key={product._id}>
      <div className="card-image">
