@@ -6,7 +6,10 @@ const Create =() =>{
     const [price,setPrice] = useState("")
     const [media,setMedia] = useState("")
     const [description,setDescription] = useState("")
-
+    const handleSubmit = async (e)=>{
+        e.preventDefault()
+        console.log(name,price,media,description)
+    }
 
     return (
       <form className="container" onSubmit={(e)=>handleSubmit(e)}>
