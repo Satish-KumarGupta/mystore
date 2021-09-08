@@ -1,13 +1,23 @@
+import { useRouter } from "next/dist/client/router"
 import Link from "next/link"
 const NavBar =()=> {
+    
+    const router= useRouter()
+    function isActive(route){
+        if(route===router.pathname){
+            return "active"
+        }
+        else ""
+    }
+
     return (
         <nav>
         <div className="nav-wrapper blue">
           <Link href="/"><a className="brand-logo">Logo</a></Link>
           <ul id="nav-mobile" className="right ">
-            <li className="Acttive"><Link  href="/login"><a>login</a></Link></li>
-            <li><Link  href="/signup"><a>signup</a></Link></li>
-            <li><Link  href="/product"><a>product</a></Link></li>
+            <li className={isActive('/login')}><Link  href="/login"><a>login</a></Link></li>
+            <li className={isActive('/signup')}><Link  href="/signup"><a>signup</a></Link></li>
+            <li className={isActive('/product')}><Link  href="/product"><a>product</a></Link></li>
           </ul>
         </div>
       </nav>
