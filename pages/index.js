@@ -1,16 +1,23 @@
 
 import Link from 'next/link'
 // import NavBar from '../Component/NavBar'
-const  Home=(props) =>{
+const  Home=({products}) =>{
+ console.log(products )
   return (
     <div>
       {/* <NavBar /> */}
       <h1>Hello next js</h1>
-      <h2>{props.message}</h2>
-      <Link href="/product"><a>go to text</a></Link>
-
+     
     </div>
   )
 }
-
+export async function getStaticProps(){
+  const res =  await fetch(`http://localhost:3000/api/products`)
+  const data = await res.json()
+  return {
+    props:{
+       products:data
+    }
+  }
+ }
 export default Home;
