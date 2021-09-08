@@ -4,6 +4,11 @@ import { useRef,useEffect,useState} from 'react'
 const Product = ({product}) =>{
     const router = useRouter()
     const modalRef= useRef(null)
+
+    useEffect(()=>{
+        M.Modal.init(modalRef.current)
+      },[])
+
     if(router.isFallback){
         return (
             <h3> loading.. </h3>
@@ -31,10 +36,15 @@ const Product = ({product}) =>{
                
         )
       }
-      useEffect(()=>{
-        M.Modal.init(modalRef.current)
-      },[])
 
+      const deleteProduct = async ()=>{
+        const res =  await fetch(`${baseUrl}/api/product/${product._id}`,{
+           method:"DELETE"
+         })
+        await res.json()
+        router.push('/')
+       }
+    
       return(
         <div className="container certer-align">
             <h3> {product.name} </h3>
@@ -53,9 +63,11 @@ const Product = ({product}) =>{
              >Add
               <i className="material-icons right">add</i>
             </button>
+            
             <p className="left-align">
                 {product.description}
             </p> 
+
             <button data-target="modal1" className="btn modal-trigger waves-effect waves-light #c62828 red darken-3">Delete
               <i className="material-icons left">delete</i>
             </button>
