@@ -17,7 +17,7 @@ const NavBar =()=> {
           <ul id="nav-mobile" className="right ">
             <li className={isActive('/login')}><Link  href="/login"><a>login</a></Link></li>
             <li className={isActive('/signup')}><Link  href="/signup"><a>signup</a></Link></li>
-            <li className={isActive('/product')}><Link  href="/product"><a>product</a></Link></li>
+            <li className={isActive('/create')}><Link  href="/create"><a>create</a></Link></li>
           </ul>
         </div>
       </nav>
