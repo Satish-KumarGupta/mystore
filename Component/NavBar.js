@@ -1,10 +1,8 @@
 
 const NavBar =()=> {
     return (
-        <div>
-            <h1>Navbar</h1>
-        </div>
-    )
+             <h1>Navbar</h1>
+      )
 }
 
 export default NavBar
