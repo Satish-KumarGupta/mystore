@@ -1,7 +1,8 @@
-import Product from '../../../Models/Product'
-// import initDB from '../../../Helpers/initDB'
+/* eslint-disable import/no-anonymous-default-export */
+import Product from '../../../models/Product'
+import initDB from '../../../helpers/initDB'
 
-// initDB()
+initDB()
 
 export default async (req,res)=>{
     switch(req.method){
