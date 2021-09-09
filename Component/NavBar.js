@@ -6,6 +6,9 @@ const NavBar =()=> {
     
     const router= useRouter()
     const {token}=parseCookies()
+    // const cookieuser = parseCookies()
+    // const user =  cookieuser.user ? JSON.parse(cookieuser.user) : ""
+  
     let user= false
     if(token){
       user=true
@@ -25,8 +28,9 @@ const NavBar =()=> {
         <div className="nav-wrapper blue">
           <Link href="/"><a className="brand-logo">Logo</a></Link>
           <ul id="nav-mobile" className="right ">
+          <li className={isActive('/cart')}><Link href="/cart"><a>cart</a></Link></li>
             {
-            user &&
+            user.role=='admin' && user.role == 'root' &&
               <li className={isActive('/create')}><Link  href="/create"><a>create</a></Link></li>
             }
            
@@ -35,6 +39,7 @@ const NavBar =()=> {
             <li className={isActive('/account')}><Link  href="/account"><a>account</a></Link></li>
             <li><button className="btn red" onClick={()=>{
               cookie.remove('token')
+              cookie.remove('user')
               router.push('/login')
             }} >Logout</button></li>
             </>

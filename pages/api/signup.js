@@ -1,7 +1,7 @@
 import initDB from '../../Helper/initDB'
 import User from '../../Models/User'
 import bcrypt from 'bcryptjs'
-//import Cart from '../../model/Cart'
+import Cart from '../../Models/Cart'
 initDB()
 
 

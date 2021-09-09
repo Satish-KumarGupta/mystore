@@ -94,7 +94,6 @@ const Create = ()=>{
         res.end()
     }
   
-  
     return {
         props:{}
     }
