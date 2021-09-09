@@ -19,7 +19,6 @@ const Login = ()=>{
         password
       })
     })
-
     const res2 = await res.json()
     if(res2.error){
       M.toast({html: res2.error,classes:"red"})
