@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import initDB from '../../Helper/initDB'
 import User from '../../Models/User'
 import bcrypt from 'bcryptjs'
