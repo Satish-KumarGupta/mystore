@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 
 import Link from 'next/link'
 import baseUrl from '../Helper/baseUrl';

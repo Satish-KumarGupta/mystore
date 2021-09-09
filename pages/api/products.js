@@ -33,7 +33,9 @@ const saveProduct = async (req,res)=>{
  
   const {name,price,description,mediaUrl} =  req.body
   try{
-      if(!name || !price || !description || !mediaUrl){
+    console.log(name,price,description,mediaUrl)
+ 
+    if(!name || !price || !description || !mediaUrl){
     return res.status(422).json({error:"Please add all the fields"})
   }
    const product = await new Product({

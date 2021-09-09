@@ -1,51 +1,55 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import {useState} from 'react'
 import baseUrl from '../Helper/baseUrl'
-const Create =() =>{
-    const [name,setName] = useState("")
-    const [price,setPrice] = useState("")
-    const [media,setMedia] = useState("")
-    const [description,setDescription] = useState("")
+
+const Create = ()=>{
+   const [name,setName] = useState("")
+   const [price,setPrice] = useState("")
+   const [media,setMedia] = useState("")
+   const [description,setDescription] = useState("")
     const handleSubmit = async (e)=>{
-        e.preventDefault()
-        try{
-        const mediaUrl =  await imageUpload()
-        const res =  await fetch(`${baseUrl}/api/products`,{
+      e.preventDefault()
+      try{
+             const mediaUrl =  await imageUpload()
+      const res =  await fetch(`${baseUrl}/api/products`,{
         method:"POST",
         headers:{
-            'Content-Type':'application/json'
+          'Content-Type':'application/json'
         },
         body:JSON.stringify({
-            name,
-            price,
-            mediaUrl,
-            description
+          name,
+          price,
+          mediaUrl,
+          description
         })
-        })
-        const res2 = await res.json()
-        if(res2.error){
-         M.toast({html: res2.error,classes:"red"})
-        }else{
-         M.toast({html: "Product saved",classes:"green"})
-        }
-        }catch(err){
+      })
+      const res2 = await res.json()
+      if(res2.error){
+        M.toast({html: res2.error,classes:"red"})
+      }else{
+        M.toast({html: "Product saved",classes:"green"})
+      }
+      }catch(err){
         console.log(err)
-        }
+      }
+ 
     }
     const imageUpload = async ()=>{
-            const data =  new FormData()
-            data.append('file',media)
-            data.append('upload_preset',"mystore")
-            data.append('cloud_name',"cnq")
-            const res = await fetch("	https://api.cloudinary.com/v1_1/cnq/image/upload",{
-            method:"POST",
-            body:data
-            })
-            const res2  = await res.json()
-            return res2.url
+         const data =  new FormData()
+         data.append('file',media)
+         data.append('upload_preset',"mystore")
+         data.append('cloud_name',"dge0asujp")
+         const res = await fetch("	https://api.cloudinary.com/v1_1/dge0asujp/image/upload",{
+           method:"POST",
+           body:data
+         })
+         const res2  = await res.json()
+         return res2.url
     }
-    return (
-      <form className="container" onSubmit={(e)=>handleSubmit(e)}>
+    return(
+     <form className="container" onSubmit={(e)=>handleSubmit(e)}>
          <input type="text" name="name" placeholder="Name" 
          value={name} 
          onChange={(e)=>{setName(e.target.value)}}
@@ -67,7 +71,7 @@ const Create =() =>{
           </div>
         </div>
          <img className="responsive-img" src={media?URL.createObjectURL(media):""} />
-        <textarea name="description"   
+        <textarea name="description" 
         placeholder="Description"
          value={description} 
          onChange={(e)=>{setDescription(e.target.value)}}
@@ -77,6 +81,7 @@ const Create =() =>{
           </button>
      </form>
     )
-}
+  }
 
-export default Create
+    
+  export default Create

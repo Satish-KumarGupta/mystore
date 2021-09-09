@@ -1,6 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
-import Product from '../../../models/Product'
-import initDB from '../../../helpers/initDB'
+import Product from '../../../Models/Product'
+import initDB from '../../../Helper/initDB'
 
 initDB()
 
