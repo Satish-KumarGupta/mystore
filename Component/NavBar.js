@@ -4,9 +4,9 @@ import {parseCookies} from 'nookies'
 const NavBar =()=> {
     
     const router= useRouter()
-    const {tokan}=parseCookies()
+    const {token}=parseCookies()
     let user= false
-    if(tokan){
+    if(token){
       user=true
     } 
     else{
@@ -16,7 +16,7 @@ const NavBar =()=> {
         if(route===router.pathname){
             return "active"
         }
-        else ""
+        else " "
     }
 
     return (
