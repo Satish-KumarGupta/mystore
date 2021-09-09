@@ -5,7 +5,7 @@ const cart = () => {
     <div>
         cart page
     </div>
-     )
+    )
 }
 
 export async function getServerSideProps(ctx){
@@ -13,12 +13,12 @@ export async function getServerSideProps(ctx){
     const res =await fetch(`${baseUrl}/api/cart`,{
         headers:{
             // "Authorization":"bearer"+token   "bearer is optinal"
-            "Authorization":token
+            "Authorization": token
 
         }
     })
     const products = await res.json()
-    console.log(products)
+    console.log("products",products)
     return{
         props:{products}
     }
