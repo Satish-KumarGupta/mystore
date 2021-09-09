@@ -95,7 +95,7 @@ export async function getStaticProps({params:{id}}){
  export async function getStaticPaths() {
     return {
       paths: [
-        { params: { id:"613885623c3c4c08cd8ed3fb"} } 
+        { params: { id:"6139966bc21753036ad1e2c2"} } 
       ],
       fallback: true
     };
