@@ -1,0 +1,209 @@
+[33mcommit 029adccd49209795a21f102143e0f1b7ee554e0f[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Thu Sep 9 15:34:32 2021 +0530
+
+    navbar page sets on login
+
+[33mcommit 11c9ef0e5333d52e6851b0c63339a18ea0a3e018[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Thu Sep 9 15:32:07 2021 +0530
+
+    navbar page sets on login
+
+[33mcommit efe5dc00adbcab6e7fb966a562a7398a54f133f3[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Thu Sep 9 15:04:15 2021 +0530
+
+    login user success
+
+[33mcommit c532e1fe1b4d3f5e22ea7843730ada2fcc435d66[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Thu Sep 9 13:06:06 2021 +0530
+
+    add user succes
+
+[33mcommit 60a28ff8c6ba25c3d1e4f2a2ca6e7536f99877a5[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Thu Sep 9 12:45:18 2021 +0530
+
+    crtae user model and sigup field validaton add and encript password
+
+[33mcommit befd2e09d0dfcae1aba6aefa7b9b130dc1d57399[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Thu Sep 9 12:07:22 2021 +0530
+
+    npm i bcryptjs jsonwebtoken js-cookie
+
+[33mcommit cea9765277ab041f422bd48238fd08d4a3dc9ffb[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Thu Sep 9 11:27:09 2021 +0530
+
+    design and styling the signup page
+
+[33mcommit aa25a065b3b28755bd1e67c1853f489bc9f08d1c[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Thu Sep 9 10:43:52 2021 +0530
+
+    create project succss
+
+[33mcommit 1c71effd08271660c35b5f88fa7fe24548012d5d[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Wed Sep 8 22:54:47 2021 +0530
+
+    add toast in validation
+
+[33mcommit 7e08c686988157919c0758aaf661d43d84cb848f[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Wed Sep 8 21:42:08 2021 +0530
+
+    add product display in console
+
+[33mcommit 5d414d9d91256d405d45d2c21c5eed2797bb0547[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Wed Sep 8 21:29:45 2021 +0530
+
+    design create product
+
+[33mcommit fcb67e083fa08a7fafbffe13b8667af8c6e0c6fb[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Wed Sep 8 21:20:28 2021 +0530
+
+    delete product
+
+[33mcommit 845471e4c7f97d17333eae5557e6a35a228d1cb9[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Wed Sep 8 21:03:07 2021 +0530
+
+    add model on click delete button
+
+[33mcommit e293abd8042f0ba0b0dedf0181ec5bf774c681ad[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Wed Sep 8 20:44:36 2021 +0530
+
+    add icons in add button
+
+[33mcommit 2335eb2222423dea04c5b461ef78a8a41947f12e[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Wed Sep 8 20:28:03 2021 +0530
+
+    fetch all productdetail from getStaticProps
+
+[33mcommit 069a93d54c83d1eb20e995e59db2209c623f3141[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Wed Sep 8 20:09:11 2021 +0530
+
+    fetch productdetail from getStaticProps using fallback true in path
+
+[33mcommit 8db67bf73a0090283d16dc669ebd96ce83224710[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Wed Sep 8 20:00:14 2021 +0530
+
+    fetch productdetail from getStaticProps using fallback false in path
+
+[33mcommit b949c1e55420d8280aa938a3b1575dabbe026ea1[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Wed Sep 8 19:30:42 2021 +0530
+
+    fetch productdetail from getserversideprops
+
+[33mcommit 2ade72910c5d5a02e26bae46a018cdfde07cd741[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Wed Sep 8 18:54:46 2021 +0530
+
+    api routing
+
+[33mcommit c2d0acbdece32670f6db5ddba3585d9ce11c6310[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Wed Sep 8 16:26:26 2021 +0530
+
+    add styling
+
+[33mcommit 09c8801e368c9aa7f75b7e975c5b79f1f266795e[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Wed Sep 8 16:02:13 2021 +0530
+
+    iterate all product in default page
+
+[33mcommit a9e41969e2ccf85a390ccd2bfca7a3800e027e41[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Wed Sep 8 15:46:51 2021 +0530
+
+    fetch product from api and store in produts pros
+
+[33mcommit d6982ba1c682421b5c9b359d1b906017b2ef5234[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Wed Sep 8 15:29:45 2021 +0530
+
+    fetch product from api
+
+[33mcommit 0b1cfd66fed4a9875286e034ed8d054c1a7ae89f[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Wed Sep 8 15:20:46 2021 +0530
+
+    create model for product
+
+[33mcommit 510cc55d6c2bad735f4c780660569a28e74e533f[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Wed Sep 8 14:56:20 2021 +0530
+
+    connected to mongodb
+
+[33mcommit 86f4984d7227a2ae67a49980c5663ca2d7698049[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Wed Sep 8 14:46:47 2021 +0530
+
+    .env local file to store url of db
+
+[33mcommit 62dade715f2a9ed5990eb1cee5c35c9ec4191d51[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Wed Sep 8 14:07:36 2021 +0530
+
+    add background active  in list threw function
+
+[33mcommit 6f1d69a34863ab6e607c2b8621da5668c3ac1e15[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Wed Sep 8 13:30:06 2021 +0530
+
+    add background in list
+
+[33mcommit 2dbf39dde3908880b11de5e75881280e124ed523[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Wed Sep 8 12:59:29 2021 +0530
+
+    add link in navbar pagination
+
+[33mcommit 34a864ea2fba248c3398dbde9e03e434d1d49cf2[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Wed Sep 8 12:31:22 2021 +0530
+
+    add styling in link
+
+[33mcommit f55c5751e4e35f87ac6ca23f4799463208c1ba86[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Tue Sep 7 19:30:16 2021 +0530
+
+    make layout for navbar component
+
+[33mcommit ba0ca2f0d4bc64c07814d16232410f32e51335e1[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Tue Sep 7 18:34:42 2021 +0530
+
+    add stylng component
+
+[33mcommit 152a644c7315023fb62fa080c3dd8128678d05bd[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Tue Sep 7 18:26:56 2021 +0530
+
+    fetch data threw getStaticProps in next js
+
+[33mcommit 385c4e06d4354c502f6a6d14c5d43f808a77bfed[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Tue Sep 7 17:58:42 2021 +0530
+
+    navigation threw Link
+
+[33mcommit afa83588b92b5cb3507b29c7d303f1512e0d730e[m
+Author: satish122 <satishkumar998475@gmail.com>
+Date:   Tue Sep 7 17:05:42 2021 +0530
+
+    Initial commit from Create Next App

@@ -3,24 +3,24 @@ import {useState} from 'react'
 import baseUrl from '../Helper/baseUrl'
 import cookie from 'js-cookie'
 import {useRouter} from 'next/router'
+const Login = ()=>{
+  const [email,setEmail] = useState("")
+  const [password,setPassword] = useState("")
+   const router  = useRouter()
+  const userLogin = async (e)=>{
+    e.preventDefault()
+    const res =  await fetch(`${baseUrl}/api/login`,{
+      method:"POST",
+      headers:{
+        "Content-Type":"application/json"
+      },
+      body:JSON.stringify({
+        email,
+        password
+      })
+    })
 
-const login =()=> {
-    const [email,setEmail] = useState("")
-    const [password,setPassword] = useState("")
-    const router = useRouter()
-    const userLogin = async (e)=>{
-        e.preventDefault()
-        const res =  await fetch(`${baseUrl}/api/login`,{
-          method:"POST",
-          headers:{
-            "Content-Type":"application/json"
-          },
-          body:JSON.stringify({
-            email,
-            password
-          })
-        })
-        const res2 = await res.json()
+    const res2 = await res.json()
     if(res2.error){
       M.toast({html: res2.error,classes:"red"})
     }else{
@@ -31,8 +31,8 @@ const login =()=> {
     }
 
   }
-    return (
-        <div className="container card authcard center-align">
+    return(
+      <div className="container card authcard center-align">
         <h3>LOGIN</h3>
         <form onSubmit={(e)=>userLogin(e)}>
            <input type="email" placeholder="Email"
@@ -51,6 +51,6 @@ const login =()=> {
        
       </div>
     )
-}
-
-export default login
+  }
+  
+  export default Login

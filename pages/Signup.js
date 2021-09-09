@@ -2,36 +2,36 @@ import Link from 'next/link'
 import {useState} from 'react'
 import baseUrl from '../Helper/baseUrl'
 import { useRouter } from 'next/router'
-const signup=()=> {
-    const [name,setName] = useState("")
-    const [email,setEmail] = useState("")
-    const [password,setPassword] = useState("")
-    const router  = useRouter()
-    const userSignup = async(e)=>{
-        e.preventDefault()
-        const res =   await fetch(`${baseUrl}/api/signup`,{
-          method:"POST",
-          headers:{
-            "Content-Type":"application/json"
-          },
-          body:JSON.stringify({
-            name,
-            email,
-            password
-          })
-        })
-    
-        const res2 = await res.json()
-        if(res2.error){
-          M.toast({html: res2.error,classes:"red"})
-        }else{
-          M.toast({html: res2.message,classes:"green"})
-          router.push('/login')
-        }
-      }
-    
-    return (
-        <div className="container card authcard center-align">
+const Signup = ()=>{
+  const [name,setName] = useState("")
+  const [email,setEmail] = useState("")
+  const [password,setPassword] = useState("")
+  const router  = useRouter()
+
+  const userSignup = async(e)=>{
+    e.preventDefault()
+    const res =   await fetch(`${baseUrl}/api/signup`,{
+      method:"POST",
+      headers:{
+        "Content-Type":"application/json"
+      },
+      body:JSON.stringify({
+        name,
+        email,
+        password
+      })
+    })
+
+    const res2 = await res.json()
+    if(res2.error){
+      M.toast({html: res2.error,classes:"red"})
+    }else{
+      M.toast({html: res2.message,classes:"green"})
+      router.push('/login')
+    }
+  }
+    return(
+      <div className="container card authcard center-align">
         <h3>SignUP</h3>
         <form onSubmit={(e)=>userSignup(e)}>
           <input type="text" placeholder="Name"
@@ -54,6 +54,6 @@ const signup=()=> {
 
       </div>
     )
-}
-
-export default signup
+  }
+  
+  export default Signup

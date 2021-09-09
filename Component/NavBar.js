@@ -1,6 +1,7 @@
 import { useRouter } from "next/dist/client/router"
 import Link from "next/link"
 import {parseCookies} from 'nookies'
+import cookie from 'js-cookie'
 const NavBar =()=> {
     
     const router= useRouter()
@@ -32,7 +33,10 @@ const NavBar =()=> {
            { user ?
             <>
             <li className={isActive('/account')}><Link  href="/account"><a>account</a></Link></li>
-            <li><button className="btn">Logout</button></li>
+            <li><button className="btn red" onClick={()=>{
+              cookie.remove('token')
+              router.push('/login')
+            }} >Logout</button></li>
             </>
            :
            <>
